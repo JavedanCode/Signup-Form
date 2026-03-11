@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script type="module" src="./js/script.js"></script>
+    <title>Signup Form</title>
+  </head>
+  <body>
+    <div class="left-panel">
+      <div class="logo-bar">
+        <img class="icon" src="./img/phoenix.png" alt="phoenix icon" />
+        <span class="logo-text">PHOENIX</span>
+      </div>
+
+      <p class="photo-by">Photo by <a>...</a> on <a>...</a></p>
+    </div>
+
+    <div class="right-panel">
+      <p class="title">
+        This is not a real online service! You know you need something like this
+        in your life to help you realize your deepest dreams. Sign up now to get
+        started.
+        <br /><br />
+        <em>You know you want to.</em>
+      </p>
+
+      <form>
+        <fieldset class="text-inputs">
+          <p class="lets-do-this">Let's do this!</p>
+
+          <div class="form-grid">
+            <div>
+              <label for="first-name">FIRST NAME</label>
+              <input
+                id="first-name"
+                type="text"
+                placeholder="John"
+                minlength="2"
+                maxlength="50"
+                required
+              />
+            </div>
+
+            <div>
+              <label for="last-name">LAST NAME</label>
+              <input id="last-name" type="text" placeholder="Doe" required />
+            </div>
+
+            <div>
+              <label for="email">EMAIL</label>
+              <input
+                id="email"
+                type="email"
+                placeholder="example@example.com"
+                required
+              />
+            </div>
+
+            <div>
+              <label for="phone">PHONE NUMBER</label>
+              <input
+                id="phone"
+                type="tel"
+                placeholder="+90 123 456 78 90"
+                pattern="[0-9+\s]{10,}"
+                required
+              />
+            </div>
+
+            <div>
+              <label for="pass">PASSWORD</label>
+              <input
+                id="pass"
+                type="password"
+                placeholder="password"
+                minlength="8"
+                required
+              />
+            </div>
+
+            <div>
+              <label for="pass-confirm">CONFIRM PASSWORD</label>
+              <input
+                id="pass-confirm"
+                type="password"
+                placeholder="repeat password"
+                minlength="8"
+                required
+              />
+              <span class="password-error"></span>
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset class="bottom-section">
+          <button class="create-account">Create Account</button>
+          <p class="already-has-account">
+            Already have an account? <a class="log-in" href="">Log in</a>
+          </p>
+        </fieldset>
+      </form>
+    </div>
+  </body>
+</html>
